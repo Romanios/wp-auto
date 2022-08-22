@@ -179,16 +179,14 @@ Template Name: home
             <li class="contacts__item">
               <p class="contacts__item-title">Телефон</p>
               <p class="contacts__item-text">
-                +38 (050) 555 66 77
+              <a href="tel:<?php the_field('phone-number'); ?>"><?php the_field('phone'); ?></a>
               </p>
             </li>
           </ul>
         </div>
         <form class="contacts__form">
           <h2 class="title contacts__title">Оставить заявку</h2>
-          <input class="contacts__input" type="text" placeholder="Как Вас зовут?">
-          <input class="contacts__input" type="tel" placeholder="Ваш номер телефона">
-          <button class="contacts__btn button" type="submit">Отправить заявку</button>
+          <?php echo do_shortcode( '[contact-form-7 id="35" title="Контактная форма 1"]' ) ?>
         </form>
       </div>
     </div>
