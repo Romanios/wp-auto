@@ -26,7 +26,7 @@ a{
 .container{
   max-width: 1220px;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   padding: 0 10px;
 }
 
@@ -37,6 +37,10 @@ a{
   background-position: top center;
   min-height: 700px;
   color: #fff;
+}
+
+.header.header-privat {
+  min-height: auto;
 }
 
 .header__top{
